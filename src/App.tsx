@@ -1,12 +1,11 @@
 import React from "react";
-import Header from "./components/Header";
-import Main from "./components/Main";
+// import Home from "./pages/Home";
+import Utility from "./pages/Utility";
 
 const App: React.FC = () => {
   return (
     <>
-      <Header />
-      <Main />
+      <Utility/>
     </>
   );
 };

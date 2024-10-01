@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Header.css";
+import "./style.css";
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
