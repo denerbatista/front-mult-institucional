@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './Header.css';
+import React, { useState } from "react";
+import "./Header.css";
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +10,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="header">
-      <div className="logo">LOGO</div>
+      <img className="logo" src="src/assets/logo.jpg" />
       <h2 className="menu-hamburger" onClick={toggleMenu}>
         ☰
       </h2>
