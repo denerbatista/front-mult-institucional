@@ -1,19 +1,16 @@
-import React, { useState } from "react";
 import "./style.css";
+import { IHeaderProps } from "../../interfaces";
+import ModalNavigation from "../ModalNavigation";
 
-const Header: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+const Header = ({ isOpen, onClose }: IHeaderProps) => {
 
   return (
     <header className="header">
       <img className="logo" src="src/assets/logo.jpg" />
-      <h2 className="menu-hamburger" onClick={toggleMenu}>
+      <h2 className="menu-hamburger" onClick={onClose}>
         ☰
       </h2>
+      <ModalNavigation isOpen={isOpen} onClose={onClose}/>
     </header>
   );
 };
